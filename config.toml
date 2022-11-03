@@ -1,0 +1,9 @@
+baseURL = 'http://marsave.la/'
+languageCode = 'en-us'
+title = 'Sergiu Marsavela'
+enableRobotsTXT = true
+googleAnalytics = 'G-NW9WLPDFCF'
+
+[params]
+  author = 'Sergiu'
+  description = "Hi, I'm Sergiu. I'm a Site Reliability Engineer at Cisco in Valencia."
