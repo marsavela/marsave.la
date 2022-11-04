@@ -4,6 +4,8 @@ title = 'Sergiu Marsavela'
 enableRobotsTXT = true
 googleAnalytics = 'G-NW9WLPDFCF'
 
+disableKinds = ['taxonomy', 'term', 'section', 'page']
+
 [params]
   author = 'Sergiu'
   description = "Hi, I'm Sergiu. I'm a Site Reliability Engineer at Cisco in Valencia."
