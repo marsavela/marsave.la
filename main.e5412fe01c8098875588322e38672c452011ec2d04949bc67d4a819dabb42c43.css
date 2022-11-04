@@ -78,7 +78,7 @@ body {
     .content a.twitter {
       color: #55acee; }
     .content a.instagram {
-      color: #3f729b; }
+      color: #f77737; }
     .content a.github {
       color: #999999; }
     .content a.linkedin {
@@ -106,6 +106,7 @@ body {
       fill: #e91e63;
       width: 1.25em;
       height: 1.25em;
+      margin: 0 3px;
       overflow: visible;
       overflow-x: visible;
       overflow-y: visible;
