@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.top,
+.bottom {
+  flex: 1 0 auto; }
+
+.top {
+  background-color: #fff; }
+
+.content-container {
+  position: relative;
+  width: 100%;
+  background-color: #2E535C;
+  background-image: url(../images/noise.gif);
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto; }
+  .content-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 128px; }
+    @media only screen and (max-width: 360px) {
+      .content-container:before {
+        height: 76px; } }
+.content {
+  position: relative;
+  padding: 24px;
+  width: 420px;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 32px; }
+  .content svg {
+    align-self: center; }
+  .content a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    text-shadow: none; }
+    .content a::before {
+      color: #fff;
+      content: attr(data-hover);
+      position: absolute;
+      transition: transform 0.3s, opacity 0.3s; }
+    .content a:hover::before, .content a:focus::before {
+      transform: scale(0.9);
+      opacity: 0; }
+    .content a.twitter {
+      color: #55acee; }
+    .content a.instagram {
+      color: #3f729b; }
+    .content a.github {
+      color: #999999; }
+    .content a.linkedin {
+      color: #0077b5; }
+    .content a.email {
+      color: #dc4e41; }
+  .content p:first-of-type {
+    margin-top: 32px; }
+    @media only screen and (max-width: 360px) {
+      .content p:first-of-type {
+        margin-top: 24px; } }
+  .content p {
+    text-align: center;
+    margin: 16px 0; }
+    @media only screen and (max-width: 360px) {
+      .content p {
+        margin: 8px; } }
+  .content p:last-of-type {
+    font-size: initial;
+    margin-bottom: 40px; }
+    @media only screen and (max-width: 360px) {
+      .content p:last-of-type {
+        margin-bottom: 32px; } }
+    .content p:last-of-type .svg-heart {
+      fill: #e91e63;
+      width: 1.25em;
+      height: 1.25em;
+      overflow: visible;
+      overflow-x: visible;
+      overflow-y: visible;
+      position: relative;
+      top: 0.1875em;
+      -webkit-animation: heart-thump 1.5s linear infinite;
+      animation: heart-thump 1.5s linear infinite;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+
+@-webkit-keyframes heart-thump {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1); }
+  8% {
+    -webkit-transform: scale3d(1.1, 1.1, 1); }
+  16% {
+    -webkit-transform: scale3d(1, 1, 1); }
+  24% {
+    -webkit-transform: scale3d(1.1, 1.1, 1); }
+  100%,
+  32% {
+    -webkit-transform: scale3d(1, 1, 1); } }
+
+@keyframes heart-thump {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  8% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1); }
+  16% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  24% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1); }
+  100%,
+  32% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background: url(../images/avatar.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  background-color: #525252;
+  align-self: center;
+  border: 4px solid white; }
+  @media only screen and (max-width: 360px) {
+    .avatar {
+      width: 96px;
+      height: 96px; } }
+  @media only screen and (max-width: 360px) {
+    .avatar {
+      border: 4px solid white; } }
