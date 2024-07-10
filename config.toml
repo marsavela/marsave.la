@@ -2,7 +2,6 @@ baseURL = 'https://marsave.la/'
 languageCode = 'en-us'
 title = 'Sergiu Marsavela'
 enableRobotsTXT = true
-googleAnalytics = 'G-NW9WLPDFCF'
 
 disableKinds = ['taxonomy', 'term', 'section', 'page']
 

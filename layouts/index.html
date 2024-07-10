@@ -2,18 +2,16 @@
 <html lang="en">
 
   <head>
-    {{ template "_internal/google_analytics.html" . }}
+    <script defer src="https://medama.sdmn.eu/script.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#14AB98">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-      maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="{{ .Site.Params.description }}">
     <title>{{ .Site.Title }}</title>
 
     <meta name="mobile-web-app-capable" content="no">
-    <link rel="icon" sizes="192x192"
-      href="images/touch/chrome-touch-icon-192x192.png">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -22,8 +20,7 @@
 
     <link rel="author" href="https://linkedin.com/in/marsavela">
 
-    {{ $style := resources.Get "main.scss" | resources.ToCSS |
-    resources.Fingerprint }}
+    {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
 
