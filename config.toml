@@ -5,6 +5,15 @@ enableRobotsTXT = true
 
 disableKinds = ['taxonomy', 'term', 'section', 'page']
 
+[services]
+  [services.googleAnalytics]
+    id = 'AW-966946453'
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = false
+
 [params]
   author = 'Sergiu'
   description = "Hi, I'm Sergiu. I'm a Site Reliability Engineer at Cisco in Valencia."

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  {{ partial "google_analytics.html" . }}
   <script defer src="https://medama.sdmn.eu/script.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
 
   <link rel="author" href="https://linkedin.com/in/marsavela">
 
-  {{ $style := resources.Get "404.scss" | resources.ToCSS | resources.Fingerprint }}
+  {{ $style := resources.Get "404.scss" | css.Sass | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 <h1>Page Not Found</h1>
