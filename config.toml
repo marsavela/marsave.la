@@ -1,5 +1,5 @@
 baseURL = 'https://marsave.la/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Sergiu Marsavela'
 enableRobotsTXT = true
 
