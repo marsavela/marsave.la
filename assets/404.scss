@@ -8,6 +8,7 @@
   font-family: 'Catamaran', sans-serif;
   font-weight: 800;
   margin: 20px 15px;
+  white-space: nowrap;
 
   > span {
     display: inline-block;
@@ -51,6 +52,28 @@
         -moz-transform: rotate(45deg);
         transform: rotate(45deg);
       }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .error-container {
+    font-size: 120px;
+
+    > span:nth-of-type(2) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .error-container {
+    font-size: 96px;
+
+    > span:nth-of-type(2) {
+      width: 72px;
+      height: 72px;
     }
   }
 }
